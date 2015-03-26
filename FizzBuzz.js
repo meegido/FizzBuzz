@@ -5,7 +5,7 @@ function FizzBuzz(number){
 			return "Fizz";
 		}
 
-	else if(number % 5 == 0){
+		else if(number % 5 == 0){
 			return "Buzz";
 		}
 
