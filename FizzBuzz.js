@@ -1,15 +1,16 @@
 function FizzBuzz(number){
 	for(var i = 1; i <= 100; i++){
 
-		if (number % 3 == 0){
-			return "Fizz";
-		}
+		var isFizz = number % 3 == 0;
+		var isBuzz = number % 5 == 0;
 
-		else if(number % 5 == 0){
-			return "Buzz";
-		}
+		if(isFizz && isBuzz){ return "FizzBuzz"; }
 
-	return number;
+		if(isFizz){ return "Fizz"; }
+
+		if(isBuzz){ return "Buzz"; }
+
+		return number.toString();
 
 	}
 
@@ -26,7 +27,7 @@ console.log(FizzBuzz(7) == 7);
 console.log(FizzBuzz(8) == 8);
 console.log(FizzBuzz(9) == "Fizz");
 
-console.log (FizzBuzz(21));
+console.log (FizzBuzz(15) == "FizzBuzz");
 
 
 
